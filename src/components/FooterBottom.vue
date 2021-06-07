@@ -56,7 +56,13 @@ export default {
     }
 
     img{
+        cursor: pointer;
         margin: 10px;
+    }
+
+    img:hover{
+        transition: 0.5s;
+        opacity: 70%;
     }
     
 
@@ -65,11 +71,19 @@ export default {
         font-weight: 500;
         font-size: 18px;
         text-transform: uppercase;
-        padding: 10px 20px;
+        padding: 10px 15px;
         background: none;
         cursor: pointer;
         border: 2px solid $colore-principale;
         color: white;
+    }
+
+    button:hover{
+        background:$colore-principale;
+        color: white;
+        transition: 0.5s;
+        
+    
     }
     
 </style>

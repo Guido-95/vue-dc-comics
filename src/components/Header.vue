@@ -6,7 +6,7 @@
         <div class="link-header">
             <ul>
                 <li v-for="link,contatore in links" :key="contatore" :class=" link.linkCorrente ? 'attivo' : '' ">
-                   <a :href="link.indirizzo"> {{link.testo}} </a>
+                   <a :href="link.indirizzo" :class=" link.linkCorrente ? 'linkAttivo' : '' "> {{link.testo}} </a>
                 </li>
             </ul>
         </div>
@@ -107,7 +107,8 @@ export default {
             display: flex;
             align-items: center;
             height: 100%;
-            padding: 12px;
+            margin: 0px 12px 12px 12px;
+
            a {
                
                font-size: 13px;
@@ -118,13 +119,20 @@ export default {
         }     
         
         li:hover{
+            transition: 0.3s;
+            box-shadow: inset 0 -5px 0 0 $colore-principale;  
+        }
+         li a:hover{
             color: $colore-principale;
-            border-bottom: 5px solid $colore-principale; 
+            
         }
 
         .attivo {
+            
+            box-shadow: inset 0 -5px 0 0 $colore-principale; 
+        }
+        .linkAttivo{
             color: $colore-principale;
-            border-bottom: 5px solid $colore-principale;
         }
     }
 
