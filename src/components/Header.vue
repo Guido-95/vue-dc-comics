@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <div class="logo">
-            <img src="../assets/img/dc-logo.png" alt="logo DC">
+           <a href=""> <img src="../assets/img/dc-logo.png" alt="logo DC"> </a> 
         </div>
         <div class="link-header">
             <ul>
@@ -79,30 +79,31 @@ export default {
 <style lang="scss" scoped>
     @import "./style/css.scss";
 
-    .wrapper{
+    .wrapper {
         display: flex;
         align-items: center;
         height: 140px; 
     }
 
-    .logo{
+    .logo {
         width: 40%;
-     
-       
+
+        img{
+            
+            width: 18%;
+        }
     }
 
-    .link-header{
+    .link-header {
        height: 100%;
         width: 60%;
         
     }
 
-    ul{
+    ul {
         height: 100%;
         display: flex;
-        
 
-        
         li {
             display: flex;
             align-items: center;
@@ -110,7 +111,6 @@ export default {
             margin: 0px 12px 12px 12px;
 
            a {
-               
                font-size: 13px;
                font-weight: 700;
                text-transform: uppercase;
@@ -118,22 +118,24 @@ export default {
            }
         }     
         
-        li:hover{
+        li:hover {
             transition: 0.3s;
             box-shadow: inset 0 -5px 0 0 $colore-principale;  
         }
-         li a:hover{
+         li a:hover {
             color: $colore-principale;
             
         }
 
-        .attivo {
+        
+    }
+
+    .attivo {
             
             box-shadow: inset 0 -5px 0 0 $colore-principale; 
         }
-        .linkAttivo{
+        .linkAttivo {
             color: $colore-principale;
         }
-    }
 
 </style>

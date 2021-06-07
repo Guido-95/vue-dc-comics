@@ -55,21 +55,22 @@ export default {
    @import "./style/css.scss";
   
 
-  *{
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
-  body{
+  body {
     font-family: 'Roboto', sans-serif;
   }
 
   
-  main{
-    .contenuto-principale{
+  main {
+    .contenuto-principale {
     
     background-color: black;
+
     }
     .contenuto-secondario {
       position: relative;
@@ -79,34 +80,33 @@ export default {
    
   }
   
-  .footer-top{
+  .footer-top {
+
     height: 380px;
-    
     background: url("./assets/img/footer-bg.jpg");
     z-index: 1;
     background-repeat: no-repeat;
     background-size: cover;
+
   }
 
-  .footer-bottom{
-      position: relative;
-      z-index:3;
-      background-color: #303030;
+  .footer-bottom {
+    position: relative;
+    z-index:3;
+    background-color: #303030;
   }
   
 
-  .wrapper{
+  .wrapper {
     max-width: 1170px;
     margin: auto;
-   
-    
   }
 
-  ul{
+  ul {
     list-style: none;
   }
 
-  a{
+  a {
     text-decoration: none;
   }
 
