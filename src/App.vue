@@ -52,10 +52,17 @@ export default {
 </script>
 
 <style lang="scss">
+   @import "./style/css.scss";
+  
+
   *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+
+  body{
+    font-family: 'Roboto', sans-serif;
   }
 
   
@@ -65,8 +72,9 @@ export default {
     background-color: black;
     }
     .contenuto-secondario {
-      
-      background-color: rgb(128, 217, 247);
+      position: relative;
+      z-index:3;
+      background-color: $colore-principale;
     }
    
   }
@@ -75,21 +83,31 @@ export default {
     height: 380px;
     
     background: url("./assets/img/footer-bg.jpg");
-    
+    z-index: 1;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .footer-bottom{
+      position: relative;
+      z-index:3;
+      background-color: #303030;
   }
   
 
   .wrapper{
     max-width: 1170px;
     margin: auto;
-    border: 1px solid red;
+   
     
   }
 
   ul{
     list-style: none;
+  }
+
+  a{
+    text-decoration: none;
   }
 
 </style>

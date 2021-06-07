@@ -1,15 +1,18 @@
 <template>
     <div class="wrapper">
         <div class="footer-left">
-             <button>sign up now</button>    
+             <button>sign-up now!</button>    
         </div>
 
         <div class="footer-right">
-            Follow us 
-            <img src="../assets/img/footer-facebook.png" alt="">
-            <img src="../assets/img/footer-twitter.png" alt="">
-            <img src="../assets/img/footer-youtube.png" alt="">
-            <img src="../assets/img/footer-facebook.png" alt="">
+            <span> Follow us </span> 
+            <img src="../assets/img/footer-facebook.png" alt="facebook">
+            <img src="../assets/img/footer-twitter.png" alt="twitter">
+            <img src="../assets/img/footer-youtube.png" alt="youtube">
+            <img src="../assets/img/footer-pinterest.png" alt="pinterest">
+            <img src="../assets/img/footer-periscope.png" alt="periscope">
+
+            
         </div>
        
     </div>
@@ -21,15 +24,52 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+     @import "./style/css.scss";
+     
     .wrapper{
-        height: 100px;
+        height: 107px;
         display: flex;
         align-items: center;
+      
     }
 
     .footer-left{
         width: 60%;
-        background-color: lightcyan;
+     
     }
+
+    .footer-right{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+    }
+
+    .footer-right > span{
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-right: 15px;
+        color: $colore-principale;
+    }
+
+    img{
+        margin: 10px;
+    }
+    
+
+
+    button{
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        background: none;
+        cursor: pointer;
+        border: 2px solid $colore-principale;
+        color: white;
+    }
+    
 </style>

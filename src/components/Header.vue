@@ -5,8 +5,8 @@
         </div>
         <div class="link-header">
             <ul>
-                <li v-for="link,contatore in links" :key="contatore">
-                   <a href=""> {{link.testo}} </a>
+                <li v-for="link,contatore in links" :key="contatore" :class=" link.linkCorrente ? 'attivo' : '' ">
+                   <a :href="link.indirizzo"> {{link.testo}} </a>
                 </li>
             </ul>
         </div>
@@ -26,7 +26,7 @@ export default {
                 {
                     testo:"Comics",
                     indirizzo: "#",
-                    linkCorrente:false
+                    linkCorrente:true
                 },
                 {
                     testo:"Movies",
@@ -77,6 +77,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import "./style/css.scss";
 
     .wrapper{
         display: flex;
@@ -86,21 +87,44 @@ export default {
 
     .logo{
         width: 40%;
+     
        
     }
 
     .link-header{
+       height: 100%;
         width: 60%;
         
     }
 
     ul{
+        height: 100%;
         display: flex;
-        li {
+        
 
+        
+        li {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 12px;
            a {
-               padding: 15px;
+               
+               font-size: 13px;
+               font-weight: 700;
+               text-transform: uppercase;
+               color: #464646;
            }
+        }     
+        
+        li:hover{
+            color: $colore-principale;
+            border-bottom: 5px solid $colore-principale; 
+        }
+
+        .attivo {
+            color: $colore-principale;
+            border-bottom: 5px solid $colore-principale;
         }
     }
 

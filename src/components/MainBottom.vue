@@ -39,19 +39,24 @@ export default {
         height: 150px;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
       
     }
 
     img{
-        height: 50px;
+        margin-right: 10px;
+        height: 45px;
     }
 
     .img{
+        margin-left: 25px;
         display: flex;
         align-items: center;
         width: calc(88% / 5);
-        border: 1px solid black;
+        text-transform: uppercase;
+        color: white;
+        font-size: 15px;
+        
     }
 
     
