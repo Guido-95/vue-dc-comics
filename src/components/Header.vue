@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @import "./style/css.scss";
+    @import "./style/variabili.scss";
 
     .wrapper {
         display: flex;

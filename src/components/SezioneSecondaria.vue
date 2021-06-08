@@ -1,26 +1,40 @@
 <template>
    <div class="wrapper">
        <div class="img">
-            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+            <a href="#">
+               <img src="../assets/img/buy-comics-digital-comics.png">
+               
+            </a>
             digital comics
         </div>
         <div class="img">
-
-            <img src="../assets/img/buy-comics-merchandise.png" alt="">
+            <a href="">
+                <img src="../assets/img/buy-comics-merchandise.png">
+            </a>
+           
             dc merchandise
         
         </div>
         <div class="img">
-            <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+            <a href="">
+                <img src="../assets/img/buy-comics-subscriptions.png">
+            </a>
+            
             subscription
         </div>
         <div class="img">
-            <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+            <a href="">
+                 <img src="../assets/img/buy-comics-shop-locator.png">
+            </a>
+           
             comic shop locator
         </div>
 
         <div class="img">
-            <img src="../assets/img/buy-dc-power-visa.svg" alt="">
+            <a href="">
+                <img src="../assets/img/buy-dc-power-visa.svg">
+            </a>
+            
             dc power visa
         </div>
 
@@ -42,6 +56,7 @@ export default {
         align-items: center;
         justify-content: center;
         padding: 10px 100px;
+        
         .img {
             margin-left: 25px;
             display: flex;
@@ -52,12 +67,14 @@ export default {
             color: white;
            
 
-             img {
+            img {
                 margin-right: 10px;
                 height: 45px;
+                &:hover{
+                    height: 50px;
+                    transition: 0.2s;
+                }
             }
-
-        
         }
     }
 

@@ -17,7 +17,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @import "./style/css.scss";
+    @import "./style/variabili.scss";
+    
     .wrapper {
         height: 160px;
         display: flex;

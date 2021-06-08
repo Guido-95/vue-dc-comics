@@ -10,12 +10,10 @@
 
       <section class="contenuto-principale wrapper">
         <Prodotto 
-        :percorso="prodotto.thumb"
-        :nome="prodotto.series"
-        v-for="(prodotto,contatore) in prodotti" :key=" contatore "/>
-
-        <button> Load more </button>
+        v-for="(prodotto,contatore) in prodotti" :key=" contatore "
+        :prodotto="prodotto" />
         
+        <button> Load more </button>
         
       </section>
 
@@ -35,7 +33,6 @@
       </div>
     </footer>
    
-
   </div>
 </template>
 
@@ -58,7 +55,7 @@ export default {
     FooterAlto : FooterAlto,
     FooterBasso:FooterBasso
   },
-  data(){
+  data () {
     return {
       prodotti : 
       [
@@ -142,7 +139,7 @@ export default {
 </script>
 
 <style lang="scss">
-   @import "./style/css.scss";
+   @import "./style/variabili.scss";
   
 
   * {
@@ -152,7 +149,7 @@ export default {
   }
 
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-principale;
   }
 
   
@@ -160,7 +157,6 @@ export default {
     background-color: #1c1c1c;
 
     .contenuto-principale {
-      
       display: flex;
       flex-wrap: wrap;
       padding: 50px 50px 25px 50px;
@@ -171,8 +167,8 @@ export default {
         border: none;
         font-weight: 700;
         margin: 25px auto 0px auto;
-        color: white;
         background-color: $colore-principale;
+        color: white;
       }
     }
 
@@ -184,13 +180,11 @@ export default {
   }
   
   .footer-top {
-
     height: 380px;
-    background: url("./assets/img/footer-bg.jpg");
     z-index: 1;
     background-repeat: no-repeat;
     background-size: cover;
-
+    background: url("./assets/img/footer-bg.jpg");
   }
 
   .footer-bottom {

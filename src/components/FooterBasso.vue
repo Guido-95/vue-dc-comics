@@ -26,7 +26,7 @@ export default {
 
 <style lang="scss" scoped>
 
-     @import "./style/css.scss";
+     @import "./style/variabili.scss";
      
     .wrapper{
         height: 107px;

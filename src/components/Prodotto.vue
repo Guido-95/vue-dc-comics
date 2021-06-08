@@ -2,9 +2,9 @@
     
     <div class="articolo">
         <div class="img">
-             <img :src="percorso" :alt="nome">
+             <img :src="prodotto.thumb" :alt="prodotto.series">
         </div>
-        <span class="nome-prodotto"> {{ nome }} </span>
+        <span class="nome-prodotto"> {{ prodotto.series }} </span>
        
     </div>
  
@@ -15,8 +15,7 @@
 export default {
     name:"prodotto",
     props: {
-        percorso:String,
-        nome:String
+        prodotto:Object,
     }
 }
 </script>
@@ -29,7 +28,7 @@ export default {
         width: calc(100% / 6 - 30px);
 
         .img {
-            height: 180px;
+            height: 185px;
             overflow:hidden;
         }
 
@@ -42,9 +41,16 @@ export default {
 
         &  img {
         display: block;
-        width: 100%;  
+        cursor: pointer;
+        width: 100%; 
+         
+        &:hover{
+            width: 180px;
+            margin: auto;
+            transition: 0.2s;
+        }
         
-    }
+        }
     }
 
    
