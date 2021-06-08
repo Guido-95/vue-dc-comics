@@ -34,30 +34,35 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
     .wrapper {
         height: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
-      
-    }
+        padding: 10px 100px;
+        .img {
+            margin-left: 25px;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            width: calc(100% / 5);
+            text-transform: uppercase;
+            color: white;
+           
 
-    img{
-        margin-right: 10px;
-        height: 45px;
-    }
+             img {
+                margin-right: 10px;
+                height: 45px;
+            }
 
-    .img{
-        margin-left: 25px;
-        display: flex;
-        align-items: center;
-        width: calc(88% / 5);
-        text-transform: uppercase;
-        color: white;
-        font-size: 15px;
         
+        }
     }
+
+   
+    
 
     
 </style>
