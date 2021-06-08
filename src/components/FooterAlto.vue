@@ -61,6 +61,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import "./style/css.scss";
+
     .wrapper{
         display: flex;
         position: relative;
@@ -71,28 +73,27 @@ export default {
     }
     
   
-    ul{
-        
-        
-        li{
-            
-            
-            a{  
-               
-                font-size: 12px;
+    ul {
+        li {
+            a {  
+                font-size: 13px;
                 color: #959595;
-            }
+
+                &:hover {
+                    color: $colore-principale;
+                }
+            } 
         }
     }
 
-    h2{
+    h2 {
         text-transform: uppercase;
         font-size: 20px;
         margin: 10px 10px 10px 0px;
         color: white;
     }
 
-    .logo-dc-footer{
+    .logo-dc-footer {
         position: absolute;
         top: -90px;
         right: 0px;
